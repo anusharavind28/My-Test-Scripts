@@ -5,7 +5,7 @@ import seaborn as sns
 from datetime import date
 from glob import glob
 files = glob(r'Tickets\*.xlsx')
-# print(files)
+print(files)
 # data = pd.read_excel(files[0])
 # node_down_tickets = data[data['Short description'].str.contains("Node_Down") == True].copy()
 # node_down_tickets['Touched By'] = np.where(node_down_tickets['Work notes'].str.contains("Merge Service Check") == True, "Automation","NOC")
