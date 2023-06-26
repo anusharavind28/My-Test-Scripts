@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from datetime import date
 from glob import glob
-files = glob(r'Tickets\*.xlsx')
+files = glob(r'.\Tickets\*.xlsx')
 print(files)
 data = pd.read_excel(files[0])
 node_down_tickets = data[data['Short description'].str.contains("Node_Down") == True].copy()
