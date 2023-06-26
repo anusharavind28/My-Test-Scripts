@@ -1,11 +1,11 @@
-import pandas as pd
-import numpy as np
-import matplotlib.pyplot as plt
-import seaborn as sns
-from datetime import date
-from glob import glob
-files = glob(r'Tickets\*.xlsx')
-print(files)
+# import pandas as pd
+# import numpy as np
+# import matplotlib.pyplot as plt
+# import seaborn as sns
+# from datetime import date
+# from glob import glob
+# files = glob(r'Tickets\*.xlsx')
+# print(files)
 # data = pd.read_excel(files[0])
 # node_down_tickets = data[data['Short description'].str.contains("Node_Down") == True].copy()
 # node_down_tickets['Touched By'] = np.where(node_down_tickets['Work notes'].str.contains("Merge Service Check") == True, "Automation","NOC")
@@ -17,3 +17,6 @@ print(files)
 # sns.countplot(data=automation_touched, x='Resolved', hue='Resolved', ax=axs[1])
 # axs[1].set_title("Resolution Status "+str(date.today()))
 # plt.savefig("image.png")
+
+import os
+cwd = os.getcwd()
