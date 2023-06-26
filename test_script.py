@@ -8,7 +8,7 @@ import os
 
 cwd = os.getcwd()
 print(cwd)
-files = glob(cwd+r'\Tickets\*.xlsx')
+files = glob(r'*.xlsx')
 print(files)
 data = pd.read_excel(files[0])
 node_down_tickets = data[data['Short description'].str.contains("Node_Down") == True].copy()
